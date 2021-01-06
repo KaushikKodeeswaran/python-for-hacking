@@ -2,7 +2,6 @@
 
 def generate(arr, i, s, length,filename): 
     if (i == 0): 
-        print(s) 
         f = open(filename + ".txt", "a")
 	f.write(s+"\n")
 	f.close()
@@ -24,7 +23,7 @@ def load(option):
 	DIGITS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
 	SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>', '*', '(', ')', '<']
 	length = int(input("Enter lenght :"))
-	filename = str(raw_input("Enter file name to be saved"))
+	filename = str(raw_input("Enter file name to be saved \n"))
 	
 	if option == 1:
 		generate(lower_case, length, "", 26,str(filename) )
@@ -44,14 +43,22 @@ def load(option):
 		generate(upper_case+DIGITS, length, "", 36,filename )
 	if option == 9:
 		generate(upper_case+SYMBOLS, length, "", 42,filename)
-
+	if option == 10:
+		generate(DIGITS+SYMBOLS, length, "", 26,filename)
+	if option == 11:
+		generate(upper_case+SYMBOLS+lower_case, length, "", 68,filename)
+	if option == 12:
+		generate(upper_case+DIGITS+lower_case, length, "", 62,filename)
+	if option == 13:
+		generate(upper_case+SYMBOLS+DIGITS+lower_case, length, "", 78,filename)
 def main():
-	print('''1 - Lower Case \n2- Upper Case \n3- Digits \n4- Symbols \n5- Lower + Upper \n6- Lower + Digits \n7- Lower + Symbols \n8- Upper + Digits \n9- Upper + Symbols\n
+	print('''1 - Lower Case \n2- Upper Case \n3- Digits \n4- Symbols \n5- Lower + Upper \n6- Lower + Digits \n7- Lower + Symbols \n8- Upper + Digits \n9- Upper + Symbols\n10- Digits + Symbols\n11- Upper + Lower + Symbols\n12- Upper + Lower + Digits\n13- Upper + Lower + Digits + Symbols
 	''')
 	option = input("Enter Option :")
 	load(option)
 	
 main()
+print("[+] Done Successfully")
 
 
 	
