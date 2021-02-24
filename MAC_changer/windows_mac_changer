@@ -4,3 +4,6 @@ registry: \HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\ search for tra
 create new:string value with name NetwordAddress
 Disable and Enable the adopter
 
+![Screenshot (308)](https://user-images.githubusercontent.com/52545122/108962001-2570ec80-769e-11eb-9fd3-c35052309c4b.png)
+![Screenshot (306)](https://user-images.githubusercontent.com/52545122/108962011-27d34680-769e-11eb-9bb0-8c14231c1322.png)
+![Screenshot (307)](https://user-images.githubusercontent.com/52545122/108962022-29047380-769e-11eb-9c48-7f7dce5365a2.png)
