@@ -1,0 +1,6 @@
+getmac
+copy transport name
+registry: \HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\ search for transport name;
+create new:string value with name NetwordAddress
+Disable and Enable the adopter
+
